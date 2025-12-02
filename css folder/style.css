@@ -1,0 +1,724 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.425);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+
+nav h1 {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+
+ul li {
+    margin: 0 20px;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.nav-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li a:hover, 
+ul li a.active {
+    color: aliceblue;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background: linear-gradient(#7040de, #ededed);
+    /* overflow: hidden; */
+    /* animation: black-white 3s steps(100000) .1s 1; */
+}
+
+/* ============home start============= */
+
+
+/* section {
+    animation: black-white 3s steps(100000) .1s 1;
+} */
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    min-height: 100vh;
+}
+
+.left_image img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 3px solid #ededed;
+    box-shadow: 0 0 20px #fff;
+}
+
+
+
+.left_image img {
+    /* height: 50ch; */
+    animation: updown 5s steps(100000) 0.5s infinite ;
+}
+
+@keyframes updown {
+
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+
+}
+
+.left_image {
+    border-radius: 50%;
+}
+
+.right_text {
+    height: 100%;
+    width: 50%;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.137);
+    box-shadow: 0 0 20px #000000e5;
+}
+
+
+.right_text h1{
+    color: #7040de;
+    padding: 20px 0;
+    width: 30ch;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(1000) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+.inf p{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.social_media_icon ul {
+    display: flex;
+}
+
+.social_media_icon ul li a img{
+    height: 50px;
+    width: 50px;
+}
+
+
+/* ============home end============= */
+
+
+
+/* ============about start=========== */
+
+
+.left_text {
+    height: 100%;
+    width: 50%;
+    color: black;
+    background: rgba(255, 255, 255, 0.137);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #000000e5;
+}
+
+.left_text h1{
+    color: #7040de;
+    padding: 20px 0;
+}
+
+.left_text p {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.right_img img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 20px #fff;
+}
+
+.contanier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 60px;
+}
+
+@keyframes black-white {
+    0% {
+        background: #000;
+    }
+}
+
+.left_text {
+    animation: left_right 3s steps(100000) 0.1s 1;
+}
+
+@keyframes left_right {
+    0% {
+        transform: translateX(-800px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.right_img {
+    animation: right_left 3s steps(100000) 0.1s 1;
+}
+
+@keyframes right_left {
+    0% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.right_img img {
+    /* height: 50ch; */
+    animation: updown 5s steps(100000) 0.5s infinite ;
+}
+
+@keyframes updown {
+
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+
+}
+
+
+
+
+/* ============about end============= */
+
+
+
+/* ===========services start========= */
+
+
+
+.top_img {
+    animation: top_bottom 3s steps(100000) 0.1s 1;
+}
+
+@keyframes top_bottom {
+    0% {
+        transform: translateY(-500px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.top_img img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 20px #ffffff;
+    animation: move 5s steps(100000) 0.5s infinite;
+}
+
+@keyframes move {
+
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+
+}
+
+.top_img {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.bottom_text {
+    height: 27rem;
+    width: 100;
+    padding: 10px;
+}
+
+.contant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.contant div {
+    height: 10rem;
+    width: 20rem;
+    margin: 10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.377);
+    padding: 10px;
+    box-shadow: 0 0 20px #000000e5;
+}
+
+.web-design {
+    animation: left_right 3s steps(100000) 0.1s 1;
+}
+
+@keyframes left_right {
+    0% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}   
+
+.web-development {
+    animation: back 3s steps(100000) 0.1s 1;
+}
+
+@keyframes back {
+    0% {
+        
+    }
+}
+
+.ui_ux_design {
+    animation: right_left 3s steps(100000) 0.1s 1;
+}
+
+@keyframes right_left {
+    0% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}  
+
+.responsive ,.website_maintenance {
+    animation: bottom_top 3s steps(100000) 0.1s 1;
+}
+
+@keyframes bottom_top {
+    0% {
+        transform: translateY(500px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.contant div h3 {
+    color: #7040de;
+    font-size: 25px;
+}
+
+.contant div p {
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+/* ===========services end=========== */
+
+
+/* ===========contact start========== */
+
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.text {
+    width: 420px;   
+    box-shadow: 0 0 30px #000000e5;
+    color: white;
+    border-radius: 20px;
+    padding: 30px 50px;
+    background: rgba(255, 255, 255, .137);
+}
+
+.text h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+
+.inputs-box {
+    width: 100%;
+    height: 50%;
+    margin: 30px 0;
+}
+
+.inputs-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    border-radius: 40px;
+    font-size: 20px;
+    /* padding: 20px 45px 20px 20px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.inputs-box input::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+.message-box textarea{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* background: white; */
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    border-radius: 40px;
+    font-size: 20px;
+    /* padding: 20px 45px 20px 20px; */
+    padding-top: 20px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+}
+
+.message-box textarea::placeholder {
+    color: white;
+}
+
+.submit-button {
+    text-align: center;
+    margin: 20px;
+}
+
+.submit-button button {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 20px;
+    padding: 20px 45px 20px 20px;
+    transition: .5s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    background: #7040de;
+    color: #fff;
+}
+
+
+/* ============contact end=========== */
+
+
+/* ============project start========= */
+
+
+
+
+
+
+
+/* ============project end=========== */
+
+
+
+/* ============responsive ui========= */
+
+
+
+@media (max-width:850px) {
+    .home {
+        width: 100%;
+    }
+
+    .social_media_icon ul li a img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .left_image img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .right_text h1 {
+        font-size: 25px;
+    }
+
+    .inf p {
+        font-size: 15px;
+    }
+}
+
+/* =========== iphone 12 pro========== */
+
+@media (max-width: 390px) {
+
+    body {
+        min-height: 100vh;
+    }
+
+    nav h1 {
+        font-size: 20px;
+    }
+
+    ul li {
+        margin: 0 7px;
+    }
+
+    ul li a {
+        font-size: 10px;
+    }
+
+    .home {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .social_media_icon ul li a img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .social_media_icon ul li {
+        margin: auto;
+    }
+
+    .left_image img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .left_image {
+        padding-top: 20px;
+    }
+    
+
+    .right_text h1{
+    color: #7040de;
+    padding: 20px 0;
+    width: 13ch;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(1000) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+    .right_text {
+        margin-left: 75px;
+        margin-top: 40px;
+    }
+
+    /* =========About start========= */
+
+
+    .contanier {
+        display: block;
+        text-align: center;
+    }
+
+    .left_text {
+        height: 100%;
+        width: 50%;
+    }
+
+    .right_img {
+        animation: normal;
+    }
+
+    .left_text {
+        animation: normal;
+        margin-left: 75px;
+        margin-top: 40px;
+    }
+
+    .left_text p {
+        font-size: 15px;
+    }
+    
+    .right_img img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .right_img {
+        margin: 60px;
+    }
+
+
+    /* =========About start========= */
+
+
+    /* =========services start====== */
+
+    .top_img img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .bottom_text {
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+
+    .top_img {
+        animation: normal;
+    }
+
+    .web-design {
+        animation: normal;
+    }
+
+    .contant div {
+        height: 7rem;
+        padding: 14px;
+        margin: 15px;
+    }
+
+    .contant div p {
+        font-size: 15px;
+    }
+
+    .ui_ux_design {
+        animation: normal;
+    }
+
+    .responsive {
+        animation: normal;
+    }
+
+    .website_maintenance {
+        animation: normal;
+    }
+
+    /* =========services start====== */
+    
+
+    /* =========contact start======= */
+
+
+    .text {
+        width: 100%;
+    }
+
+    .inputs-box {
+        width: 100%;
+        height: 50%;
+        margin: 10px 0;
+    }
+
+    .inputs-box input {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        border-radius: 20px;
+    }
+
+    .inputs-box textarea {
+        padding-top: 10px;
+        padding-bottom: 70px;
+        padding-left: 10px;
+        border-radius: 20px ;
+    }
+
+    .submit-button button {
+        border-radius: 20px;
+        font-size: 15px;
+        padding: 20px 30px 20px 20px;
+    }
+
+
+    /* =========contact start======= */
+
+}
+
+/* =========== iphone 12 pro========== */
+
+
+
+/* ============responsive ui========= */
